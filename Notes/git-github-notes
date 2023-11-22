@@ -1,0 +1,46 @@
+Git
+
+Clone a project
+git clone git@github.com:ArmandoAyala11/Adventureworks-python.git
+
+Create a branch
+git checkout -b "Initial-branch"
+
+View status
+git status
+
+Add files/folders to commit
+git add --all
+git add file-name
+
+Show existing branches
+git branch
+
+Create commit
+git commit -m "Hello world"
+
+Push created branch to origin on Github
+git push origin Initial-branch
+
+Move to main branch (move from one to another branch)
+git checkout main
+git switch branch-name
+
+Get the last changes on local repository from remote repository
+git fetch origin
+
+After fetching the origin we can review the remote branches
+git branch -r
+
+View the logs on local workspace
+git log --oneline
+
+Jump into the remote branch to view changes made
+git checkout origin/main
+
+Get back to our local workspace which is not up to date
+Also can switch other branches to see the changes
+git switch main
+
+This command will overwrite our local workspace with the latest changes on our remote branch — double check the current branch before executing the pull command
+git pull origin main
